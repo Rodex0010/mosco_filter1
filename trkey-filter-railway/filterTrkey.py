@@ -262,7 +262,7 @@ async def start_cleanup_command(event):
 
     STOP_CLEANUP.discard(chat_id)
 
-    initial_message = await event.reply("🩴**قابل يا كسمك **")
+    initial_message = await event.reply("**قابل يا كسمك **🩴")
     START_MESSAGES_TO_DELETE[chat_id] = initial_message
 
     await asyncio.sleep(0.5)
